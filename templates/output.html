@@ -1,0 +1,15 @@
+<html>
+<body>
+	<h2>Market Basket Analysis Predictions</h2>
+	{% if predictions %}    
+		<ul>
+    		{% for i in predictions: %}
+    		<li style="color:green">{{ i }}</li>
+    		{% endfor %}
+		</ul>
+	{% else %}
+		<p style="color:red">No Predictions Available</p> 
+	{% endif %}
+
+</body>
+</html>
